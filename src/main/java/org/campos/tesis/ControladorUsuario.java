@@ -22,7 +22,7 @@ public class ControladorUsuario {
 
     @RequestMapping(value="/usuario", method= RequestMethod.GET,
             headers = {"Accept=application/json"})
-    public ArrayList<Usuario> obtenerTodos(@PathVariable String id)throws Exception{
+    public ArrayList<Usuario> obtenerTodos()throws Exception{
         return (ArrayList<Usuario>) repositorioUsuario.findAll();
     }
 

@@ -14,6 +14,6 @@ public class TesisApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-	repositorioUsuario.save(new Usuario("topoyiyo@outlook.com","conejo"))	;
+	//repositorioUsuario.save(new Usuario("topoyiyo@outlook.com","conejo"))	;
 	}
 }
