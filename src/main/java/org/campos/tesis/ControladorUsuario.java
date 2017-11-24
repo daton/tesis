@@ -27,11 +27,15 @@ public class ControladorUsuario {
         return (ArrayList<Usuario>) repositorioUsuario.findAll();
     }
 
+    @CrossOrigin
     @RequestMapping(value="/usuario", method= RequestMethod.POST,
             headers = {"Accept=application/json"})
     public Estatus guardar(@RequestBody String json)throws Exception{
            ObjectMapper maper=new ObjectMapper();
+        System.out.println(json);
+
        Usuario u=    maper.readValue(json, Usuario.class);
+        System.out.println("el email es"+u.getEmail());
            repositorioUsuario.save(u);
         System.out.println("gaurdado con esito");
            Estatus e=new Estatus();
