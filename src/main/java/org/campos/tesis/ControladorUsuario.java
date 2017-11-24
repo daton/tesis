@@ -26,7 +26,7 @@ public class ControladorUsuario {
         return (ArrayList<Usuario>) repositorioUsuario.findAll();
     }
 
-    @RequestMapping(value="/usuario", method= RequestMethod.GET,
+    @RequestMapping(value="/usuario", method= RequestMethod.POST,
             headers = {"Accept=application/json"})
     public Estatus guardar(@RequestBody String json)throws Exception{
            ObjectMapper maper=new ObjectMapper();
@@ -47,7 +47,7 @@ public class ControladorUsuario {
         return e;
 
     }
-    @RequestMapping(value="/usuario/{id}", method= RequestMethod.PUT,
+    @RequestMapping(value="/usuario/{id}", method= RequestMethod.DELETE,
             headers = {"Accept=application/json"})
     public Estatus borrar(@PathVariable String id)throws Exception{
 
