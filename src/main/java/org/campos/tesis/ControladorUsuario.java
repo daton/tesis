@@ -13,7 +13,7 @@ public class ControladorUsuario {
 
     @Autowired
     RepositorioUsuario repositorioUsuario;
-    //  aqui a contnuacion van las 5 operaciones basicas con la entidad mensaje
+    //  aqui a contnuacion van las 5 operaciones basicas con la entidad usuario
 
     @RequestMapping(value="/usuario/{id}", method= RequestMethod.GET,
             headers = {"Accept=application/json"})
