@@ -33,7 +33,9 @@ public class ControladorUsuario {
            ObjectMapper maper=new ObjectMapper();
        Usuario u=    maper.readValue(json, Usuario.class);
            repositorioUsuario.save(u);
+        System.out.println("gaurdado con esito");
            Estatus e=new Estatus();
+           e.setSuccess(true);
            return e;
 
     }
