@@ -40,6 +40,7 @@ public class ControladorUsuario {
         System.out.println("gaurdado con esito");
            Estatus e=new Estatus();
            e.setSuccess(true);
+           e.setMensaje("Usuario guardado con exito");
            return e;
 
     }
