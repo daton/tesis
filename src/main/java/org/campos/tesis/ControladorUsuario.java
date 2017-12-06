@@ -37,10 +37,10 @@ public class ControladorUsuario {
        Usuario u=    maper.readValue(json, Usuario.class);
         System.out.println("el email es"+u.getEmail());
            repositorioUsuario.save(u);
-        System.out.println("gaurdado con esito");
+        System.out.println("gaurdado con exito");
            Estatus e=new Estatus();
            e.setSuccess(true);
-           e.setMensaje("Usuario guardado con exito");
+           e.setMensaje("Usuario se ha guardado con exito");
            return e;
 
     }
