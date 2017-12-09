@@ -24,7 +24,7 @@ public class ControladorClima {
         System.out.println("gaurdado con exito");
         Estatus e=new Estatus();
         e.setSuccess(true);
-        e.setMensaje("Usuario se ha guardado con exito");
+        e.setMensaje("Estacion guardada copn exito");
         return e;
 
     }
